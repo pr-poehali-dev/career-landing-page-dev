@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import Icon from "@/components/ui/icon";
 
 const OFFICE_IMG = "https://cdn.poehali.dev/projects/bd4e4f85-e9e8-4660-ba87-151e5adcbe77/files/77a394a0-2259-432b-a032-24d534e52e88.jpg";
+const LOGO_IMG = "https://cdn.poehali.dev/projects/bd4e4f85-e9e8-4660-ba87-151e5adcbe77/bucket/9f87a5cf-f144-4da5-8c2b-8a99ad4af7d0.jpg";
 
 const NAV_LINKS = [
   { label: "О компании", href: "#about" },
@@ -13,12 +14,12 @@ const NAV_LINKS = [
 ];
 
 const VACANCIES = [
-  { title: "Продавец-консультант", dept: "Розница", type: "Офис", salary: "от 50 000 ₽" },
+  { title: "Продавец-консультант", dept: "Розница", type: "г. Новочеркасск", salary: "от 50 000 ₽" },
+  { title: "Продавец-консультант", dept: "Розница", type: "Военвед", salary: "от 50 000 ₽" },
   { title: "Старший продавец", dept: "Розница", type: "Офис", salary: "от 65 000 ₽" },
   { title: "Управляющий магазином", dept: "Управление", type: "Офис", salary: "от 90 000 ₽" },
   { title: "Менеджер по продажам B2B", dept: "Продажи", type: "Офис / Разъезды", salary: "от 80 000 ₽" },
   { title: "Специалист сервисного центра", dept: "Сервис", type: "Офис", salary: "от 55 000 ₽" },
-  { title: "Менеджер по закупкам", dept: "Закупки", type: "Офис", salary: "от 70 000 ₽" },
 ];
 
 const BENEFITS = [
@@ -118,9 +119,9 @@ export default function Index() {
       {/* NAV */}
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-[#0d0d0d]/95 backdrop-blur-xl border-b border-white/8" : ""}`}>
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-          <span className="font-display text-2xl font-bold tracking-wider text-white">
-            ЦИФРО<span className="text-orange-500">ГРАД</span>
-          </span>
+          <a href="#" className="shrink-0">
+            <img src={LOGO_IMG} alt="Цифроград" className="h-9 w-auto" style={{ filter: "brightness(0) saturate(100%) invert(58%) sepia(80%) saturate(600%) hue-rotate(2deg) brightness(103%)" }} />
+          </a>
           <div className="hidden md:flex items-center gap-8">
             {NAV_LINKS.map((l) => (
               <a key={l.href} href={l.href} className="text-sm text-white/60 hover:text-orange-400 transition-colors duration-200">
@@ -423,9 +424,7 @@ export default function Index() {
       {/* FOOTER */}
       <footer className="border-t border-white/8 py-8 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-white/20 text-sm">
-          <span className="font-display text-lg font-bold text-white">
-            ЦИФРО<span className="text-orange-500">ГРАД</span>
-          </span>
+          <img src={LOGO_IMG} alt="Цифроград" className="h-7 w-auto" style={{ filter: "brightness(0) saturate(100%) invert(58%) sepia(80%) saturate(600%) hue-rotate(2deg) brightness(103%)" }} />
           <span>© 2002–2024 Цифроград. Все права защищены.</span>
           <div className="flex flex-wrap gap-6">
             {NAV_LINKS.map((l) => (
