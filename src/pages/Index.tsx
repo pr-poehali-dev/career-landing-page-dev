@@ -13,52 +13,52 @@ const NAV_LINKS = [
 ];
 
 const VACANCIES = [
-  { title: "Senior Frontend Developer", dept: "Разработка", type: "Удалённо", salary: "от 280 000 ₽" },
-  { title: "Product Manager", dept: "Продукт", type: "Гибрид", salary: "от 220 000 ₽" },
-  { title: "Data Scientist", dept: "Аналитика", type: "Офис / Удалённо", salary: "от 300 000 ₽" },
-  { title: "UX/UI Designer", dept: "Дизайн", type: "Удалённо", salary: "от 180 000 ₽" },
-  { title: "Backend Developer (Python)", dept: "Разработка", type: "Гибрид", salary: "от 260 000 ₽" },
-  { title: "Head of Marketing", dept: "Маркетинг", type: "Офис", salary: "от 250 000 ₽" },
+  { title: "Продавец-консультант", dept: "Розница", type: "Офис", salary: "от 50 000 ₽" },
+  { title: "Старший продавец", dept: "Розница", type: "Офис", salary: "от 65 000 ₽" },
+  { title: "Управляющий магазином", dept: "Управление", type: "Офис", salary: "от 90 000 ₽" },
+  { title: "Менеджер по продажам B2B", dept: "Продажи", type: "Офис / Разъезды", salary: "от 80 000 ₽" },
+  { title: "Специалист сервисного центра", dept: "Сервис", type: "Офис", salary: "от 55 000 ₽" },
+  { title: "Менеджер по закупкам", dept: "Закупки", type: "Офис", salary: "от 70 000 ₽" },
 ];
 
 const BENEFITS = [
-  { icon: "Rocket", title: "Рост без потолка", desc: "Индивидуальный план развития, бюджет на обучение и конференции" },
-  { icon: "Heart", title: "Забота о здоровье", desc: "ДМС с первого дня, спортивная компенсация и психологическая поддержка" },
-  { icon: "Globe", title: "Работа из любой точки", desc: "Полная удалёнка, гибкий график и оплачиваемые коворкинги" },
-  { icon: "Zap", title: "Крутые проекты", desc: "Продукты, которыми пользуются миллионы — никакой скучной рутины" },
-  { icon: "Coffee", title: "Уют в офисе", desc: "Современные open-space, кофе, снеки и зоны отдыха" },
-  { icon: "Star", title: "Бонусы и акции", desc: "Конкурентная зарплата, квартальные премии и опционы" },
+  { icon: "TrendingUp", title: "Карьерный рост", desc: "Реальный путь от продавца до управляющего — у нас много историй успеха внутри команды" },
+  { icon: "Banknote", title: "Прозрачный доход", desc: "Оклад + % с продаж без потолка. Чем больше продаёшь — тем больше зарабатываешь" },
+  { icon: "GraduationCap", title: "Обучение за счёт компании", desc: "Тренинги по продажам, продуктовое обучение от Samsung, Xiaomi, МТС и Билайн" },
+  { icon: "Users", title: "Команда как семья", desc: "22 года вместе — люди приходят и остаются. Коллектив, которому можно доверять" },
+  { icon: "MapPin", title: "Удобное расположение", desc: "Магазины по всей Ростовской области — работай рядом с домом" },
+  { icon: "Gift", title: "Скидки на технику", desc: "Сотрудники покупают смартфоны и гаджеты по специальным корпоративным ценам" },
 ];
 
 const REVIEWS = [
   {
-    name: "Алёна Смирнова",
-    role: "Lead Developer, 3 года",
-    text: "Здесь я выросла из джуна до тимлида за два года. Атмосфера открытости и реальная поддержка менторов — это не просто слова.",
+    name: "Алёна Ткачёва",
+    role: "Управляющая магазином, 5 лет",
+    text: "Пришла продавцом-консультантом, через три года стала управляющей. Здесь реально видят тех, кто работает и хочет расти.",
     avatar: "А",
     color: "from-orange-500 to-amber-400",
   },
   {
-    name: "Максим Петров",
-    role: "Product Manager, 1.5 года",
-    text: "Лучшая команда, с которой я работал. Идеи принимаются всерьёз, запускаем быстро, учимся на данных — настоящий продуктовый подход.",
+    name: "Михаил Дорофеев",
+    role: "Старший продавец, 2 года",
+    text: "Нравится, что компания давно на рынке и стабильная. Зарплата всегда вовремя, руководство адекватное, коллеги поддерживают.",
     avatar: "М",
     color: "from-orange-600 to-red-500",
   },
   {
-    name: "Дарья Коваль",
-    role: "UX Designer, 2 года",
-    text: "Кайфую от задач. Дизайн здесь — это стратегия, а не картинки. Я влияю на продукт с первого дня и вижу результат своей работы.",
-    avatar: "Д",
+    name: "Светлана Крымова",
+    role: "Менеджер по продажам, 3 года",
+    text: "Работаю с корпоративными клиентами — интересно и доходно. Компания даёт все инструменты, остальное зависит от тебя.",
+    avatar: "С",
     color: "from-amber-400 to-orange-500",
   },
 ];
 
 const CULTURE_CARDS = [
-  { emoji: "🔥", title: "Двигаемся быстро", desc: "Решения принимаются за часы, а не недели" },
-  { emoji: "🤝", title: "Доверяем друг другу", desc: "Никакой микроменеджмент — ты профессионал" },
-  { emoji: "🌱", title: "Учимся постоянно", desc: "Ошибаться — нормально, главное — расти" },
-  { emoji: "🎯", title: "Думаем о результате", desc: "Важно влияние, а не количество часов" },
+  { emoji: "🤝", title: "Мы — семья", desc: "100 человек, которые знают друг друга по именам и всегда помогут" },
+  { emoji: "📈", title: "Растём вместе", desc: "Компания открывает новые магазины — значит, открываются и новые возможности" },
+  { emoji: "🏆", title: "Лидеры региона", desc: "22 года на рынке — безусловный лидер среди независимых ритейлеров Юга России" },
+  { emoji: "💡", title: "Честность и доверие", desc: "Прозрачные условия, понятные KPI и руководство, которое слышит сотрудников" },
 ];
 
 function useIntersection(threshold = 0.12) {
@@ -162,16 +162,16 @@ export default function Index() {
             Открыто {VACANCIES.length} вакансий
           </div>
           <h1 className="font-display text-6xl md:text-8xl font-bold leading-none tracking-tight mb-6">
-            <span className="block text-white">СТРОЙ БУДУЩЕЕ</span>
+            <span className="block text-white">РАБОТА В ЛИДЕРЕ</span>
             <span
               className="block bg-gradient-to-r from-orange-400 via-amber-300 to-orange-500 bg-clip-text text-transparent"
               style={{ backgroundSize: "200%", animation: "gradient-shift 6s ease infinite" }}
             >
-              ВМЕСТЕ С НАМИ
+              СОТОВОГО РИТЕЙЛА
             </span>
           </h1>
           <p className="text-white/50 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-            Мы создаём продукты, меняющие жизнь людей. Присоединяйся к команде, где каждый голос слышен, а работа — настоящее удовольствие.
+            «Цифроград» — это 22 года на рынке, 100 сотрудников и сеть магазинов по всей Ростовской области. Магазины Xiaomi, Samsung, МТС и Билайн — всё под одной крышей.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -203,17 +203,17 @@ export default function Index() {
             <div>
               <p className="text-orange-500 font-display text-sm tracking-widest uppercase mb-4">О компании</p>
               <h2 className="font-display text-5xl md:text-6xl font-bold leading-tight mb-6">
-                Мы — команда,<br />
-                <span className="bg-gradient-to-r from-orange-400 to-amber-300 bg-clip-text text-transparent">одержимая качеством</span>
+                Лидер сотового<br />
+                <span className="bg-gradient-to-r from-orange-400 to-amber-300 bg-clip-text text-transparent">ритейла Юга России</span>
               </h2>
               <p className="text-white/50 text-lg leading-relaxed mb-6">
-                С 2018 года мы разрабатываем цифровые продукты нового поколения. Более 200 человек в команде, офисы в Москве и Петербурге, и клиенты по всему миру.
+                С 2002 года «Цифроград» непрерывно развивается: открываются новые магазины, появляются новые услуги. Мы — семья магазинов под собственным брендом, а также официальные фирменные магазины Xiaomi и Samsung.
               </p>
               <p className="text-white/50 text-lg leading-relaxed">
-                Наша миссия — создавать технологии, которые реально меняют опыт людей. Мы не делаем просто «сайты» — мы строим экосистемы.
+                Дополнительно развиваем дилерские магазины МТС и Билайн по всей Ростовской области. Наш штат — 100 человек, и мы продолжаем расти.
               </p>
               <div className="grid grid-cols-3 gap-6 mt-10">
-                {[["200+", "сотрудников"], ["50M+", "пользователей"], ["6 лет", "на рынке"]].map(([val, label]) => (
+                {[["2002", "год основания"], ["100+", "сотрудников"], ["№1", "в регионе"]].map(([val, label]) => (
                   <div key={label}>
                     <div className="font-display text-3xl font-bold text-orange-400">{val}</div>
                     <div className="text-white/40 text-sm mt-1">{label}</div>
@@ -385,9 +385,9 @@ export default function Index() {
             <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-orange-500 via-amber-400 to-orange-500" />
             <div className="relative">
               <p className="text-orange-500 font-display text-sm tracking-widest uppercase mb-4">Контакты</p>
-              <h2 className="font-display text-4xl md:text-5xl font-bold mb-4 text-white">Готов стартовать?</h2>
+              <h2 className="font-display text-4xl md:text-5xl font-bold mb-4 text-white">Готов к нам?</h2>
               <p className="text-white/50 text-lg mb-8 max-w-lg mx-auto leading-relaxed">
-                Напиши нам — расскажем о вакансиях подробнее и ответим на любые вопросы о команде и процессах.
+                Оставь заявку — наш HR свяжется с тобой, расскажет о подходящих вакансиях и ответит на все вопросы.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
                 <input
@@ -410,13 +410,9 @@ export default function Index() {
                   <Icon name="Mail" size={16} />
                   hr@cifrograd.ru
                 </a>
-                <a href="tel:+74951234567" className="flex items-center gap-2 hover:text-orange-400 transition-colors">
-                  <Icon name="Phone" size={16} />
-                  +7 (495) 123-45-67
-                </a>
                 <span className="flex items-center gap-2">
                   <Icon name="MapPin" size={16} />
-                  Москва, Пресненская наб. 12
+                  Ростовская область
                 </span>
               </div>
             </div>
@@ -430,7 +426,7 @@ export default function Index() {
           <span className="font-display text-lg font-bold text-white">
             ЦИФРО<span className="text-orange-500">ГРАД</span>
           </span>
-          <span>© 2024 Цифроград. Все права защищены.</span>
+          <span>© 2002–2024 Цифроград. Все права защищены.</span>
           <div className="flex flex-wrap gap-6">
             {NAV_LINKS.map((l) => (
               <a key={l.href} href={l.href} className="hover:text-white/50 transition-colors">{l.label}</a>
